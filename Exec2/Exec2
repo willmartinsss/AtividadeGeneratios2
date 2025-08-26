@@ -1,0 +1,8 @@
+const read = require("readline-sync");
+
+let n1 = read.questionInt("Digite o número:  ");
+
+let parImpar = n1 % 2 === 0 ? "par" : "impar";
+let positivoNegativo = n1 >= 0 ? "positivo" : "negativo";
+
+console.log(`O numero ${n1} é ${parImpar} e ${positivoNegativo}`);
