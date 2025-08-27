@@ -1,38 +1,44 @@
 const read = require("readline-sync");
 
-let n1 = read.questionInt("Digite o Código do produto:  ");
+let codigo = read.questionInt("Digite o Código do produto: 1 a 6  ");
 let n2 = read.questionInt("Digite a quantidade:  ");
 
 let total;
+let produto = "";
 
-switch (n1) {
+switch (codigo) {
   //cachorro quente
   case 1:
+    produto = "Cachorro quente";
     total = n2 * 10;
     break;
   //x-salada
   case 2:
+    produto = "x-salada";
     total = n2 * 15;
     break;
   //x-bacon
   case 3:
+    produto = "x-bacon ";
     total = n2 * 18;
     break;
   //bauru
   case 4:
+    produto = "bauru ";
     total = n2 * 12;
     break;
   //refrigerante
   case 5:
+    produto = "refrigerante";
     total = n2 * 8;
     break;
   //suco d e laranja
   case 6:
+    produto = "suco de laranja";
     total = n2 * 13;
     break;
   default:
-    console.log("Digite um numero valido entre 1 a 6");
     break;
 }
 
-console.log("O total é de: ", total);
+console.log("O produto é: ", produto + `, Valor total: R$ ${total.toFixed(2)}`);

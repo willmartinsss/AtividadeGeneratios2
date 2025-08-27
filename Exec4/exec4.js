@@ -38,7 +38,7 @@ switch (codigoCargo) {
     cargo = "Técnico de TI";
     break;
   default:
-    console.log("Digite um número válido entre 1 e 6.");
+    console.log("Digite um cargo válido entre 1 e 6.");
     break;
 }
 
